@@ -2,7 +2,9 @@
 #
 echo -e "\n\033[1;36m  INICIANDO ATUALIZACAO PODE DEMORAR\033[1;33m"
 cd /var/www/html/
-    wget https://github.com/vpn-ssh/PWEB4G/archive/refs/heads/main.zip > /dev/null 2>&1
+    wget https://raw.githubusercontent.com/vpn-ssh/PWEB4G/main/usuario.php > /dev/null 2>&1
+sleep 1
+    https://raw.githubusercontent.com/vpn-ssh/PWEB4G/main/EnviarAdicionarCriarTeste.php
 sleep 1
 unzip main.zip > /dev/null 2>&1
 rm -rf main.zip index.html > /dev/null 2>&1
