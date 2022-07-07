@@ -1,6 +1,18 @@
 #!/bin/bash
 #
-echo -e "\n\033[1;36m  Removendo arquivo pra atualizar\033[1;33m"
+echo ""
+echo -e "           \033[1;33m● \033[1;32mATUALIZANDO LINUX, Pode Demorar \033[1;33m●\033[0m"
+fun_update () {
+    apt-get update -y > /dev/null 2>&1 
+	apt-get install figlet -y > /dev/null 2>&1
+echo -e "\E[44;1;37m    INSTALAR O PAINEL SSH/DROP/SSL V.28 VIP-VPS     \E[0m"
+echo ""
+echo -e "                              \033[1;31mBy @Couty_SSH\033[1;36m"
+echo -e "   Couty SSH" | figlet 
+echo -e "                             \033[1;31mPainel-SSH V.28\033[1;36m"
+echo ""
+clear
+echo -e "\n\033[1;36m  REMOVER ARQUIVOS INUTES\033[1;33m"
 cd /var/www/html/ && rm -f EnviarAdicionarCriarTeste.php*
 sleep 1
 cd /var/www/html/ && rm -f usuario.php*
@@ -12,5 +24,5 @@ sleep 1
 cd /var/www/html/
    wget https://raw.githubusercontent.com/vpn-ssh/PWEB4G/main/EnviarAdicionarCriarTeste.php > /dev/null 2>&1
 sleep 1
-
+echo -e "           \033[1;33m● \033[1;32mREINICIA O APACHE2 \033[1;33m●\033[0m"
 service apache2 restart
