@@ -6,6 +6,5 @@ cd /var/www/html/
 sleep 1
     https://raw.githubusercontent.com/vpn-ssh/PWEB4G/main/EnviarAdicionarCriarTeste.php
 sleep 1
-unzip main.zip > /dev/null 2>&1
-rm -rf main.zip index.html > /dev/null 2>&1
+
 service apache2 restart
